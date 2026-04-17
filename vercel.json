@@ -10,8 +10,12 @@
       "destination": "http://13.60.98.164:8080/auth/:path*"
     },
     {
-        "source": "/oauth2/:path*",
-        "destination": "http://13.60.98.164:8080/oauth2/:path*"
+      "source": "/oauth2/:path*",
+      "destination": "http://13.60.98.164:8080/oauth2/:path*"
+    },
+    {
+      "source": "/((?!api|auth|oauth2).*)",
+      "destination": "/index.html"
     }
   ]
 }
